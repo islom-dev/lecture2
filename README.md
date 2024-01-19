@@ -1,7 +1,7 @@
 
 # lecture2
 
-    Table of Contents
+# Table of Contents
 
 1 -- SCOPE
 2 -- HOISTING
@@ -45,9 +45,73 @@ function calcAge(birthYear){
     const age = now - birthYear;
     return = age;
 }
-console.log(now);
+console.log(birthday);
+
+Block Scope:тағирёбандаҳо танҳо дар дохили
+блок дастрасанд (дар доираи блок)
+АММО ин танҳо ба тағирёбандаҳои
+let ва const дахл дорад.
+
+if( year >= 1981 && year <= 1996){
+    const millenial = true;
+    const food = "Avocado toast";
+}
+console.log(millenial);
 
 
+# HOISTING
+
+    Hoisting дар JavaScript чист?
+
+Hoisting як механизми JavaScript аст, ки дар он тағирёбандаҳо ва
+функсияҳо мавҷуданд
+эъломияҳо пеш аз рамз ба болои доираи онҳо интиқол дода мешаванд
+иҷро
+
+    Hoisting – Variable (var)
+
+Васвасаи фикр кардан вуҷуд дорад, ки ҳамаи рамзҳое, ки шумо дар он
+мебинед JavaScript
+барнома сатр ба сатр, аз боло ба поён бо тартиби ҳамчун барнома шарҳ
+дода мешавад иҷро кардан. Гарчанде ки ин аслан дуруст аст, як қисми он
+вуҷуд дорад
+тахмине, ки метавонад боиси тафаккури нодуруст дар бораи барномаи
+шумо гардад.
+
+a = 2
+var a
+console.log(a);
+
+    Hoisting –function declaration
+Ҳамин тавр, як тарзи тафаккур, ба таври маҷозӣ, дар бораи ин
+раванд ин тағирёбанда ва аст функсия
+Эъломияҳо аз ҷое, ки дар ҷараёни код пайдо мешаванд, ба болои
+он "кӯчонида мешаванд"
+код. Ин боиси номи баландбардорӣ мегардад.
+
+get()
+
+function get(){
+    console.log(a2); //Undefined
+    var a2
+}
+
+get()
+
+function get(){
+    console.log(a2); //Cannot access 'a2' before initialization
+    let a2
+}
+
+get()
+
+function get(){
+    console.log(a2); //a2 is not defined
+    const a2
+}
+
+# Thanks
+    
 
 
 
